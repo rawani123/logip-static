@@ -17,10 +17,10 @@ const LeftSide = () => {
   };
 
   return (
-    <div className='flex flex-col py-10 px-6 gap-16'>
-      <div className='font-bold text-2xl flex'>
+    <div className='flex flex-col py-10 px-6 gap-[74px] border-r-2'>
+      <div className='font-bold ml-3 text-2xl flex'>
         <PiFediverseLogoFill />
-        <span className='-mt-1.5 mx-2'>Logip</span>
+        <span className='-mt-1.5 mx-2'>logip</span>
       </div>
       <div className='flex flex-col gap-4'>
         {['home', 'projects', 'tasks', 'team', 'settings'].map((section) => (
@@ -29,7 +29,7 @@ const LeftSide = () => {
             className={`flex text-xl cursor-pointer items-center px-4  rounded-lg transition-colors ${
               active === section
                 ? ' text-black'
-                : ' text-gray-400 hover:text-black hover:bg-white'
+                : ' text-gray-500 hover:text-black hover:bg-white'
             }`}
             onClick={() => handleClick(section)}
           >
@@ -53,13 +53,13 @@ const LeftSide = () => {
       </div>
       <div className='flex flex-col gap-5'>
         <div
-          className='flex items-center px-4 py-2 rounded-lg cursor-pointer bg-white text-gray-400 hover:text-black hover:bg-white'
+          className='flex items-center   rounded-lg cursor-pointer bg-white text-gray-500 hover:text-black hover:bg-white'
         >
           <IoIosInformationCircleOutline size={"20px"} />
           <span className='-mt-1.5 mx-2'>Help & Information</span>
         </div>
         <div
-          className='flex items-center px-4 py-2 rounded-lg cursor-pointer bg-white text-gray-400 hover:text-black hover:bg-white'
+          className='flex items-center  rounded-lg cursor-pointer bg-white text-gray-500 hover:text-black hover:bg-white'
         >
           <CiCircleMinus size={"20px"} />
           <span className='-mt-1.5 mx-2'>Log out</span>
